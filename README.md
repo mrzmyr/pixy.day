@@ -9,6 +9,7 @@
   <p align="center">
     The website <a href="https://pixy.day">pixy.day</a> for the <a href="https://github.com/mrzmyr/pixy-mood-tracker-app">Pixy Mood Tracker App</>.
     <br />
+    <br />
     <a href="https://github.com/mrzmyr/pixy.day/issues">Report Bug</a>
     ·
     <a href="https://github.com/mrzmyr/pixy.day/issues">Request Feature</a>
