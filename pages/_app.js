@@ -6,18 +6,18 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/images/favicon.png" />
-        <Script async src="https://cdn.panelbear.com/analytics.js?site=4Jdh7AyQ4x" />
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-              panelbear('config', { site: '4Jdh7AyQ4x' });
-            `,
-          }}
-        />
       </Head>
       <Component {...pageProps} />
+      <Script async src="https://cdn.panelbear.com/analytics.js?site=4Jdh7AyQ4x" />
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+            panelbear('config', { site: '4Jdh7AyQ4x' });
+          `,
+        }}
+      />
     </>
   );
 }
