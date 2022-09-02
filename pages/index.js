@@ -38,7 +38,7 @@ export default function Home() {
               <div className='flex flex-col lg:items-start items-center'>
                 <Tagline />
                 <h1 className='mt-4 text-4xl lg:text-5xl font-bold font-manrope leading-tight lg:leading-snug tracking-tight text-center lg:text-left'>Track your Mood<br />with One Pixel a Day</h1>
-                <h2 className='text-lg lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app to identify mood patterns for people facing struggles with mental health.</h2>
+                <h2 className='text-lg lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app for identifying mood patterns for people facing mental health issues.</h2>
               </div>
               <div className='mt-12'>
                 <div className='flex flex-row lg:justify-start justify-center'>
