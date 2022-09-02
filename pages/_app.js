@@ -12,6 +12,7 @@ function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <Script async src="https://cdn.panelbear.com/analytics.js?site=4Jdh7AyQ4x" />
       <Script
+        id="panelbear"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
