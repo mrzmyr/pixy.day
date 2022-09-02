@@ -23,7 +23,7 @@ export default function Home() {
         <Header />
       </div>
 
-      <main className="max-w-3xl my-20 px-4 mx-auto prose">
+      <main className="max-w-3xl my-20 px-4 mx-auto prose dark:prose-invert">
           <h1>Privacy</h1>
           <p>
             DEVMOOD built the Pixy Mood Tracker app as a Free app. This SERVICE is provided by DEVMOOD at no cost and is intended for use as is.

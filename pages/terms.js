@@ -15,7 +15,7 @@ export default function Home() {
         <Header />
       </div>
 
-      <main className="max-w-3xl my-20 px-4 mx-auto prose">
+      <main className="max-w-3xl my-20 px-4 mx-auto prose dark:prose-invert">
           <h1>Terms of Service</h1>
           <p>
             By downloading or using the app, these terms will automatically apply

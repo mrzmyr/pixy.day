@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
         dangerouslySetInnerHTML={{
           __html: `
             window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-            panelbear('config', { site: '4Jdh7AyQ4x' });
+            if(panelbear) panelbear('config', { site: '4Jdh7AyQ4x' });
           `,
         }}
       />
