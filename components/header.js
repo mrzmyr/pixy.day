@@ -18,8 +18,8 @@ export const Header = () => {
         </Link>
       </div>
       <Link href="/" passHref><a className='mr-4 lg:mr-12 font-medium'>Home</a></Link>
-      <Link href="/" passHref><a className='mr-4 lg:mr-12 font-medium'>Feature Ideas</a></Link>
-      <Link href="/" passHref><a className='mr-4 lg:mr-12 font-medium'>Changelog</a></Link>
+      {/* <Link href="/" passHref><a className='mr-4 lg:mr-12 font-medium'>Feature Ideas</a></Link>
+      <Link href="/" passHref><a className='mr-4 lg:mr-12 font-medium'>Changelog</a></Link> */}
     </header>
  )
 }
