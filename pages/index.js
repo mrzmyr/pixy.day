@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 import { Review } from '../components/review'
@@ -17,6 +18,14 @@ const Tagline = () => {
 }
 
 export default function Home() {
+  const [phoneType, setPhoneType] = useState('android')
+  
+  useEffect(() => {
+    // if (typeof window !== 'undefined') {
+    //   setPhoneType(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? 'ios' : 'android')
+    // }
+  }, [])
+
   return (
     <div className="">
       <NextSeo
@@ -32,7 +41,7 @@ export default function Home() {
       </div>
 
       <main className="">
-        <div className="max-w-7xl mt-8 px-4 mx-auto">
+        <div className="max-w-7xl mb-8 px-4 mx-auto">
           <div className='flex flex-col lg:flex-row'>
             <div className='flex flex-col basis-1/2 justify-center'>
               <div className='flex flex-col lg:items-start items-center'>
@@ -66,27 +75,52 @@ export default function Home() {
               </div>
             </div>
             <div className='lg:my-0 flex relative basis-1/2 justify-center items-center'>
-              <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
-                <picture className='absolute z-30'>
-                  <img
-                    src={'/images/iphone.png'}
-                    alt={'iPhone'}
-                  />
-                </picture>
-                <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
-                  <video className='hidden dark:block' width={'89%'} autoPlay muted loop playsInline>
-                    <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
-                  </video>
-                  <video className='block dark:hidden' width={'89%'} autoPlay muted loop playsInline>
-                    <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
-                  </video>
+              {phoneType == 'android' && (
+                <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
+                  <picture className='absolute z-30'>
+                    <img
+                      src={'/images/google-pixel.svg'}
+                      alt={'iPhone'}
+                    />
+                  </picture>
+                  <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
+                    <video className='hidden dark:block' width={'91%'} autoPlay muted loop playsInline>
+                      <source src="/videos/android-demo-dark.mp4" type="video/mp4" />
+                    </video>
+                    <video className='block dark:hidden' width={'91%'} autoPlay muted loop playsInline>
+                      <source src="/videos/android-demo-light.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <picture className='absolute top-1/2 -translate-y-1/2'>
+                    <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
+                    </svg>
+                  </picture>
                 </div>
-                <picture className='absolute top-1/2 -translate-y-1/2'>
-                  <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
-                  </svg>
-                </picture>
-              </div>
+              )}
+              {phoneType == 'ios' && (
+                  <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
+                  <picture className='absolute z-30'>
+                    <img
+                      src={'/images/iphone.png'}
+                      alt={'iPhone'}
+                    />
+                  </picture>
+                  <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
+                    <video className='hidden dark:block' width={'89%'} autoPlay muted loop playsInline>
+                      <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
+                    </video>
+                    <video className='block dark:hidden' width={'89%'} autoPlay muted loop playsInline>
+                      <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <picture className='absolute top-1/2 -translate-y-1/2'>
+                    <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
+                    </svg>
+                  </picture>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -109,7 +143,7 @@ export default function Home() {
               </div>
               <div className=''>
                 <Review 
-                  comment={'“This app is just simple and does its job. So happy that I found that app.”'} 
+                  comment={'"Tracking my mood is so easy with this app. I liked that it is so minimalistic. Would recommend to my friends.”'} 
                   author={'🇺🇸 Jessie B.'} 
                 />
               </div>
