@@ -21,9 +21,9 @@ export default function Home() {
   const [phoneType, setPhoneType] = useState('android')
   
   useEffect(() => {
-    // if (typeof window !== 'undefined') {
-    //   setPhoneType(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? 'ios' : 'android')
-    // }
+    if (typeof window !== 'undefined') {
+      setPhoneType(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? 'ios' : 'android')
+    }
   }, [])
 
   return (
