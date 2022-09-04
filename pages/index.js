@@ -11,7 +11,7 @@ const Tagline = () => {
       <div className='flex'>
         <div className="bg-green-100 dark:bg-green-900 px-2 rounded-full py-1 pr-4 flex flex-row items-center">
           <div className="bg-white dark:bg-white/10 rounded-full py-1 px-3 text-sm dark:text-green-200">New</div>
-          <p className="text-sm ml-1 font-medium text-green-700 dark:text-green-200">Cateogrize your entries with tags</p>
+          <p className="text-sm ml-1 font-medium text-green-700 dark:text-green-200">Be the first to see new features? <a href="https://forms.gle/rAKYqkjLoQ4EFVob7" rel="noreferrer" className='underline' target={'_blank'}>Join our beta now</a>.</p>
         </div>
       </div>
   )
