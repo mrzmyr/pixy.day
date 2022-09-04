@@ -11,7 +11,7 @@ const Tagline = () => {
       <div className='flex'>
         <div className="bg-green-100 dark:bg-green-900 px-2 rounded-full py-1 pr-4 flex flex-row items-center">
           <div className="bg-white dark:bg-white/10 rounded-full py-1 px-3 text-sm dark:text-green-200">New</div>
-          <p className="text-sm ml-1 font-medium text-green-700 dark:text-green-200">Be the first to see new features? <a href="https://forms.gle/rAKYqkjLoQ4EFVob7" rel="noreferrer" className='underline' target={'_blank'}>Join our beta now</a>.</p>
+          <p className="text-sm ml-1 font-medium text-green-700 dark:text-green-200">Be the first to see new features?<br className='block lg:hidden' /> <a href="https://forms.gle/rAKYqkjLoQ4EFVob7" rel="noreferrer" className='underline' target={'_blank'}>Join our beta now</a>.</p>
         </div>
       </div>
   )
@@ -44,10 +44,10 @@ export default function Home() {
         <div className="max-w-7xl mb-8 px-4 mx-auto">
           <div className='flex flex-col lg:flex-row'>
             <div className='flex flex-col basis-1/2 justify-center'>
-              <div className='flex flex-col lg:items-start items-center'>
+              <div className='flex flex-col lg:items-start items-center mt-4 lg:mt-0'>
                 <Tagline />
-                <h1 className='mt-4 text-4xl lg:text-5xl font-bold font-manrope leading-tight lg:leading-snug tracking-tight text-center lg:text-left'>Track your Mood<br />with One Pixel a Day</h1>
-                <h2 className='text-lg lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app for identifying mood patterns for people facing mental health issues.</h2>
+                <h1 className='mt-4 text-3xl lg:text-5xl font-bold font-manrope leading-tight lg:leading-snug tracking-tight text-center lg:text-left'>Track your Mood<br />with One Pixel a Day</h1>
+                <h2 className='text-md lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app for identifying mood patterns for people facing mental health issues.</h2>
               </div>
               <div className='mt-12'>
                 <div className='flex flex-row lg:justify-start justify-center'>
