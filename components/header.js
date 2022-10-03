@@ -11,7 +11,7 @@ export const Header = () => {
               alt={'Pixy'}
               width={44}
               height={44}
-              src="/images/logo-header.svg"
+              src="/images/icon.png"
             />
             <div className='text-2xl font-bold ml-2'>Pixy</div>
           </a>

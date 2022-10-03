@@ -47,7 +47,7 @@ export default function Home() {
               <div className='flex flex-col lg:items-start items-center mt-4 lg:mt-0'>
                 <Tagline />
                 <h1 className='mt-4 text-3xl lg:text-5xl font-bold font-manrope leading-tight lg:leading-snug tracking-tight text-center lg:text-left'>Track your Mood<br />with One Pixel a Day</h1>
-                <h2 className='text-md lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app for identifying mood patterns for people facing mental health issues.</h2>
+                <h2 className='text-md lg:text-xl font-medium text-black dark:text-white opacity-60 leading-relaxed mt-4 max-w-lg text-center lg:text-left'>The best app to identify mood patterns, especially for people facing mental health issues.</h2>
               </div>
               <div className='mt-12'>
                 <div className='flex flex-row lg:justify-start justify-center'>
@@ -85,10 +85,10 @@ export default function Home() {
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
                     <video className='hidden dark:block' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-demo-dark.mp4" type="video/mp4" />
+                      <source src="/videos/android-dark.webm" type="video/webm" />
                     </video>
                     <video className='block dark:hidden' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-demo-light.mp4" type="video/mp4" />
+                      <source src="/videos/android-light.webm" type="video/webm" />
                     </video>
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
@@ -108,10 +108,10 @@ export default function Home() {
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
                     <video className='hidden dark:block' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
+                      <source src="/videos/ios-dark.mp4" type="video/mp4" />
                     </video>
                     <video className='block dark:hidden' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
+                      <source src="/videos/ios-light.mp4" type="video/mp4" />
                     </video>
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
@@ -132,19 +132,19 @@ export default function Home() {
               <div className=''>
                 <Review 
                   comment={'“Nice app. I use it daily now. Tracking my mood helps me reflect on my days and weeks. It wouldn\'t be so easy for me without this app.”'} 
-                  author={'🇩🇪 Mathias B.'} 
+                  author={'Mathias B.'} 
                 />
               </div>
               <div className=''>
                 <Review 
                   comment={'“I use this app daily. It really helps me to zoom out and keep regular checks on my change in mood over longer periods. Super helpful.”'} 
-                  author={'🇬🇧 Thomas M.'} 
+                  author={'Thomas M.'} 
                 />
               </div>
               <div className=''>
                 <Review 
                   comment={'"Tracking my mood is so easy with this app. I liked that it is so minimalistic. Would recommend to my friends.”'} 
-                  author={'🇺🇸 Jessie B.'} 
+                  author={'Jessie B.'} 
                 />
               </div>
             </div>
