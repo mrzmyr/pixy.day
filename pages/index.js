@@ -85,10 +85,10 @@ export default function Home() {
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
                     <video className='hidden dark:block' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-dark.webm" type="video/webm" />
+                      <source src="/videos/android-demo-dark.webm" type="video/webm" />
                     </video>
                     <video className='block dark:hidden' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-light.webm" type="video/webm" />
+                      <source src="/videos/android-demo-light.webm" type="video/webm" />
                     </video>
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
@@ -108,10 +108,10 @@ export default function Home() {
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
                     <video className='hidden dark:block' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-dark.mp4" type="video/mp4" />
+                      <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
                     </video>
                     <video className='block dark:hidden' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-light.mp4" type="video/mp4" />
+                      <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
                     </video>
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
