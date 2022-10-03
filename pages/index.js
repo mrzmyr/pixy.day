@@ -19,10 +19,12 @@ const Tagline = () => {
 
 export default function Home() {
   const [phoneType, setPhoneType] = useState('android')
+  const [darkmode, setDarkmode] = useState(false)
   
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setPhoneType(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? 'ios' : 'android')
+      setDarkmode(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
     }
   }, [])
 
@@ -84,12 +86,15 @@ export default function Home() {
                     />
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
-                    <video className='hidden dark:block' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-demo-dark.webm" type="video/webm" />
-                    </video>
-                    <video className='block dark:hidden' width={'91%'} autoPlay muted loop playsInline>
-                      <source src="/videos/android-demo-light.webm" type="video/webm" />
-                    </video>
+                    {darkmode ? (
+                      <video preload="none" width={'91%'} autoPlay muted loop playsInline>
+                        <source src="/videos/android-demo-dark.webm" type="video/webm" />
+                      </video>
+                    ) : (
+                      <video preload="none" width={'91%'} autoPlay muted loop playsInline>
+                        <source src="/videos/android-demo-light.webm" type="video/webm" />
+                      </video>
+                    )}
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
                     <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,12 +112,15 @@ export default function Home() {
                     />
                   </picture>
                   <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
-                    <video className='hidden dark:block' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
-                    </video>
-                    <video className='block dark:hidden' width={'89%'} autoPlay muted loop playsInline>
-                      <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
-                    </video>
+                    {darkmode ? (
+                      <video preload="none" width={'89%'} autoPlay muted loop playsInline>
+                        <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
+                      </video>
+                    ) : (
+                      <video preload="none" width={'89%'} autoPlay muted loop playsInline>
+                        <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
+                      </video>
+                    )}
                   </div>
                   <picture className='absolute top-1/2 -translate-y-1/2'>
                     <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
