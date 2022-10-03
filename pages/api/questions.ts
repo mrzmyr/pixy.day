@@ -15,6 +15,7 @@ type Question = {
   }[];
 };
 
+// @ts-ignore
 import questions from '../../store/questions.yml';
 
 export default function handler(req, res) {
