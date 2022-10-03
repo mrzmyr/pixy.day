@@ -18,6 +18,7 @@ const Tagline = () => {
 }
 
 export default function Home() {
+  const [showVideo, setShowVideo] = useState(false)
   const [phoneType, setPhoneType] = useState('android')
   const [darkmode, setDarkmode] = useState(false)
   
@@ -25,6 +26,7 @@ export default function Home() {
     if (typeof window !== 'undefined') {
       setPhoneType(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? 'ios' : 'android')
       setDarkmode(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      setShowVideo(true)
     }
   }, [])
 
@@ -77,57 +79,61 @@ export default function Home() {
               </div>
             </div>
             <div className='lg:my-0 flex relative basis-1/2 justify-center items-center'>
-              {phoneType == 'android' && (
-                <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
-                  <picture className='absolute z-30'>
-                    <img
-                      src={'/images/google-pixel.svg'}
-                      alt={'iPhone'}
-                    />
-                  </picture>
-                  <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
-                    {darkmode ? (
-                      <video preload="none" width={'91%'} autoPlay muted loop playsInline>
-                        <source src="/videos/android-demo-dark.webm" type="video/webm" />
-                      </video>
-                    ) : (
-                      <video preload="none" width={'91%'} autoPlay muted loop playsInline>
-                        <source src="/videos/android-demo-light.webm" type="video/webm" />
-                      </video>
-                    )}
-                  </div>
-                  <picture className='absolute top-1/2 -translate-y-1/2'>
-                    <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
-                    </svg>
-                  </picture>
-                </div>
-              )}
-              {phoneType == 'ios' && (
-                  <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
-                  <picture className='absolute z-30'>
-                    <img
-                      src={'/images/iphone.png'}
-                      alt={'iPhone'}
-                    />
-                  </picture>
-                  <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
-                    {darkmode ? (
-                      <video preload="none" width={'89%'} autoPlay muted loop playsInline>
-                        <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
-                      </video>
-                    ) : (
-                      <video preload="none" width={'89%'} autoPlay muted loop playsInline>
-                        <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
-                      </video>
-                    )}
-                  </div>
-                  <picture className='absolute top-1/2 -translate-y-1/2'>
-                    <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
-                    </svg>
-                  </picture>
-                </div>
+              {showVideo && (
+                <>
+                  {phoneType == 'android' && (
+                    <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
+                      <picture className='absolute z-30'>
+                        <img
+                          src={'/images/google-pixel.svg'}
+                          alt={'iPhone'}
+                        />
+                      </picture>
+                      <div className='relative z-20 w-full flex flex-row justify-center max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
+                        {darkmode ? (
+                          <video width={'91%'} autoPlay muted loop playsInline>
+                            <source src="/videos/android-demo-dark.mp4" type="video/mp4" />
+                          </video>
+                        ) : (
+                          <video width={'91%'} autoPlay muted loop playsInline>
+                            <source src="/videos/android-demo-light.mp4" type="video/mp4" />
+                          </video>
+                        )}
+                      </div>
+                      <picture className='absolute top-1/2 -translate-y-1/2'>
+                        <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
+                        </svg>
+                      </picture>
+                    </div>
+                  )}
+                  {phoneType == 'ios' && (
+                      <div className='h-[700px] flex relative lg:basis-1/2 justify-center items-center'>
+                      <picture className='absolute z-30'>
+                        <img
+                          src={'/images/iphone.png'}
+                          alt={'iPhone'}
+                        />
+                      </picture>
+                      <div className='relative z-20 w-full flex flex-row justify-center -mt-[2px] max-w-[309px] rounded-[20px] lg:rounded-[40px] overflow-hidden'>
+                        {darkmode ? (
+                          <video width={'89%'} autoPlay muted loop playsInline>
+                            <source src="/videos/ios-demo-dark.mp4" type="video/mp4" />
+                          </video>
+                        ) : (
+                          <video width={'89%'} autoPlay muted loop playsInline>
+                            <source src="/videos/ios-demo-light.mp4" type="video/mp4" />
+                          </video>
+                        )}
+                      </div>
+                      <picture className='absolute top-1/2 -translate-y-1/2'>
+                        <svg width="405" height="474" viewBox="0 0 405 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path className='fill-[#F4F4F4] dark:fill-neutral-900' d="M344.927 229.5C446.631 306 412.737 474 291.821 474C170.905 474 0.238037 359.995 0.238037 246.5C0.238037 133.005 25.6146 0 146.531 0C267.446 0 243.224 153 344.927 229.5Z" />
+                        </svg>
+                      </picture>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </div>
