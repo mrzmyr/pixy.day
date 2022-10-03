@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "js-yaml-loader": "^1.2.2",
     "next": "12.3",
     "next-seo": "^5.5.0",
     "next-use-posthog": "^1.16.0",
