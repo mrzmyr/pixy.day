@@ -174,7 +174,7 @@ const questions: Question[] = [
       {
         "id": 3,
         "text": {
-          "en": "Yes with other than firends/partner",
+          "en": "Yes with other than friends/partner",
           "de": "Ja, anderen als Freund*innen/Partner*innen"
         },
         "emoji": "🤗"
