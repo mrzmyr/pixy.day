@@ -212,7 +212,7 @@ const questions: Question[] = [
           "en": "No",
           "de": "Nein"
         },
-        "emoji": "🤝"
+        "emoji": "👎"
       },
       {
         "id": 3,
