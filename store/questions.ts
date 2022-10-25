@@ -188,6 +188,146 @@ const questions: Question[] = [
         "emoji": "👎"
       }
     ]
+  },
+  {
+    "id": "q6",
+    "text": {
+      "en": "Would it be helpful for you to track 'emotions' in a dedicated step?",
+      "de": "Wäre es hilfreich für dich, Emotionen in einem eigenen Schritt zu erfassen?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.46.1",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "🤝"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "text": {
+      "en": "Would it be beneficial for you could disable the 'tags' step?",
+      "de": "Wäre es hilfreich, den Schritt 'Tags' deaktivieren zu können?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.46.1",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "text": {
+      "en": "Would it be beneficial if you could disable the 'write about your day' step?",
+      "de": "Wäre es hilfreich, den Schritt 'Schreibe über deinen Tag' deaktivieren zu können?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.46.1",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "text": {
+      "en": "Would it be beneficial if you could disable the 'write about your day' step?",
+      "de": "Wäre es hilfreich, den Schritt 'Schreibe über deinen Tag' deaktivieren zu können?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.46.1",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
   }
 ]
 
