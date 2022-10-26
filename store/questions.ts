@@ -227,8 +227,8 @@ const questions: Question[] = [
   {
     "id": "q7",
     "text": {
-      "en": "Would it be beneficial, if you could disable the 'tags' step?",
-      "de": "Wäre es hilfreich, den Schritt 'Tags' deaktivieren zu können?"
+      "en": "Would it be beneficial, if you could optionally disable the 'tags' step?",
+      "de": "Wäre es hilfreich, den Schritt 'Tags' optional deaktivieren zu können?"
     },
     "type": "single",
     "appVersion": ">= 1.46.1",
@@ -262,8 +262,8 @@ const questions: Question[] = [
   {
     "id": "q8",
     "text": {
-      "en": "Would it be beneficial, if you could disable the 'write about your day' step?",
-      "de": "Wäre es hilfreich, den Schritt 'Schreibe über deinen Tag' deaktivieren zu können?"
+      "en": "Would it be beneficial, if you could optionally disable the 'write about your day' step?",
+      "de": "Wäre es hilfreich, den Schritt 'Schreibe über deinen Tag' optional deaktivieren zu können?"
     },
     "type": "single",
     "appVersion": ">= 1.46.1",
