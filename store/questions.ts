@@ -293,6 +293,76 @@ const questions: Question[] = [
         "emoji": "🤔"
       }
     ]
+  },
+  {
+    "id": "q10",
+    "text": {
+      "en": "Would you be interested in tracking your sleep along with your mood?",
+      "de": "Wärst du daran interessiert, deine Schlafqualität mit deiner Stimmung zu erfassen?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.47.0",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "text": {
+      "en": "Would you be interested in a online backuo funtionalitiy?",
+      "de": "Wärst du daran interessiert, eine Online-Backup-Funktionalität zu nutzen?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.47.0",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
   }
 ]
 
