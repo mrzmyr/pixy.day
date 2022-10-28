@@ -363,6 +363,41 @@ const questions: Question[] = [
         "emoji": "🤔"
       }
     ]
+  },
+  {
+    "id": "q12",
+    "text": {
+      "en": "Do you want weekly notifications about your statistics?",
+      "de": "Möchtest du wöchentliche Benachrichtigungen über deine Statistiken erhalten?"
+    },
+    "type": "single",
+    "appVersion": ">= 1.47.0",
+    "answers": [
+      {
+        "id": 1,
+        "text": {
+          "en": "Yes",
+          "de": "Ja"
+        },
+        "emoji": "👍"
+      },
+      {
+        "id": 2,
+        "text": {
+          "en": "No",
+          "de": "Nein"
+        },
+        "emoji": "👎"
+      },
+      {
+        "id": 3,
+        "text": {
+          "en": "Not sure",
+          "de": "Nicht sicher"
+        },
+        "emoji": "🤔"
+      }
+    ]
   }
 ]
 
