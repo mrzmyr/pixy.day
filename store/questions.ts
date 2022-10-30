@@ -332,7 +332,7 @@ const questions: Question[] = [
   {
     "id": "q11",
     "text": {
-      "en": "Would you be interested in a online backuo funtionalitiy?",
+      "en": "Would you be interested in a online backup funtionalitiy?",
       "de": "Wärst du daran interessiert, eine Online-Backup-Funktionalität zu nutzen?"
     },
     "type": "single",
